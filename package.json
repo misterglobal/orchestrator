@@ -1,0 +1,30 @@
+{
+  "name": "my-mastra-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev",
+    "get-gmail-token": "tsx src/scripts/get-gmail-token.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.1.15",
+    "@mastra/core": "^0.4.4",
+    "dotenv": "^16.4.7",
+    "googleapis": "^146.0.0",
+    "mastra": "^0.2.8",
+    "open": "^10.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
