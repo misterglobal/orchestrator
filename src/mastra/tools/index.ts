@@ -2,6 +2,7 @@ import { createTool } from '@mastra/core/tools';
 import { z } from 'zod';
 import { google } from 'googleapis';
 import { OAuth2Client } from 'google-auth-library';
+import { calendarTool } from './calendar.js';  // Add .js extension for ESM
 
 interface GeocodingResponse {
   results: {
@@ -176,3 +177,6 @@ const getEmails = async (maxResults: number = 10, query?: string): Promise<Email
 
   return emails;
 };
+
+// Export calendarTool
+export { calendarTool };
